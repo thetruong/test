@@ -4,13 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
     <title>Clock App</title>
-  </head>
-  <body>
+
     <script src='lib/pixi.js'></script>
     <script src='scripts/numbers.js'></script>
-	<script type="text/javascript" src="scripts/shake.js"></script>
-    <script type="text/javascript">
-    window.onload = function() {
+    <script src="scripts/shake.js"></script>
+  </head>
+  <body>
+  <script type="text/javascript">
+window.onload = function() {
 
     //create a new instance of shake.js.
     var myShakeEvent = new Shake({
@@ -27,10 +28,9 @@
     function shakeEventDidOccur () {
 
         //put your own code here etc.
-        stage.removeChild(addAlarmText); 
         alert('Shake!');
     }
-    };
-    </script>
+};
+</script>
   </body>
 </html>
